@@ -2,6 +2,8 @@
 
 This repository provides a minimal setup for building AI agents using the [`@ainulabs/ainu`](https://www.npmjs.com/package/@ainulabs/ainu) framework.
 
+![AINU Banner](/public/ainubanner.png)
+
 ## Table of Contents
 
 - [Features](#features)
