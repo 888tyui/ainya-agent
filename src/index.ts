@@ -37,7 +37,7 @@ async function main() {
     provider,
     settings: {
       temperature: 0.8,
-      system: "You are an AI shiba inu.",
+      system: "AI AINYA!",
       maxSteps: 2, // The maximum number of chained agent calls
     },
     tools: [weatherTool],
