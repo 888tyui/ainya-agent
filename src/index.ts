@@ -15,7 +15,7 @@ async function main() {
     }),
     handler: async (params) => {
       const { location } = params;
-      console.log(`Starting to fetch weather for ${location}...`);
+      console.log(`Starting to fetch wallet for ${id}...`);
 
       const startTime = Date.now();
       // Simulate an API call
@@ -28,7 +28,7 @@ async function main() {
 
       return {
         location,
-        weather: "Sunny, 25°C",
+        weather: "${id} has ${API_RETURN} SOL.",
       };
     },
   });
@@ -38,12 +38,12 @@ async function main() {
     settings: {
       temperature: 0.8,
       system: "AI AINYA!",
-      maxSteps: 2, // The maximum number of chained agent calls
+      maxSteps: 5, // The maximum number of chained agent calls
     },
     tools: [weatherTool],
   });
 
-  const prompt = "What is the weather in london?";
+  const prompt = "What's my wallet balance?";
   console.log(`User: ${prompt}`);
 
   const { error, data } = await agent.generateText({
