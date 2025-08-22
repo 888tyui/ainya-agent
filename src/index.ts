@@ -46,11 +46,11 @@ async function main() {
   const prompt = "What is the weather in london?";
   console.log(`User: ${prompt}`);
 
-  const { success, error, data } = await agent.generateText({
+  const { error, data } = await agent.generateText({
     prompt,
   });
 
-  if (!success) {
+  if (error || !data) {
     console.error("Error generating text:", error);
     return;
   }
