@@ -33,6 +33,8 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@ainulabs/ainu": "^0.0.4"
+    "@ainulabs/ainu": "^0.0.4",
+    "dotenv": "^17.2.1",
+    "zod": "^3.25.49"
   }
 }
